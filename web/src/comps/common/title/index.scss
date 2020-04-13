@@ -1,0 +1,8 @@
+@import "../../../public/css/mixin";
+.border-left {
+  width: 4px;
+  height: 18px;
+  background: $color-primary;
+  border-radius: 20px;
+  border: 1px solid $color-primary;
+}

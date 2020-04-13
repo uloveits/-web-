@@ -1,0 +1,44 @@
+@import "../../../public/css/mixin";
+.sider{
+  box-shadow: 2px 0 6px rgba(0,21,41,.35);
+  overflow-y: auto;
+  overflow-x: hidden;
+  //min-height: 100vh;
+  .menuLogo{
+    height: 64px;
+    max-width: 256px;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+    background-color: $color-primary;
+    &.hide{
+      a{
+        justify-content: center;
+        div{
+          overflow: hidden;
+          opacity: 0;
+          width: 0;
+        }
+      }
+    }
+    a{
+      display: flex;
+      height: 100%;
+      align-items: center;
+      img{
+        width: 40px;
+        flex: none;
+        margin-left: 12px;
+      }
+      div{
+        color: #fff;
+        width: 100%;
+        font-size: 24px;
+        padding-left: 10px;
+        white-space:nowrap;
+        transition: all .3s;
+      }
+    }
+  }
+
+}
